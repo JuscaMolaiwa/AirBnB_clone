@@ -12,7 +12,7 @@
 }
 
 .places article {
-  width: 390px;
+  flex-basis: calc(33.33% - 20px); /* Set the width for each article */
   padding: 20px;
   margin: 20px;
   border-radius: 4px;
@@ -83,6 +83,9 @@
 
 .places .reviews p {
   font-size: 12px;
+}
+.filters {
+  display: none;
 }
 
 .places .amenities ul li,
