@@ -1,0 +1,49 @@
+/* styles/6-filters.css */
+
+/* Style for the popover dropdown */
+.filters .popover {
+    display: none;
+    position: absolute;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+/* Show the popover dropdown on hover */
+.filters .locations:hover .popover,
+.filters .amenities:hover .popover {
+    display: block;
+}
+
+/* Style for the nested list inside the popover dropdown */
+.filters .popover ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the nested list items */
+.filters .popover ul li {
+    padding: 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+/* Style for the nested list items on hover */
+.filters .popover ul li:hover {
+    background-color: #F0F0F0;
+}
+
+/* Style for the nested list items with sub-lists */
+.filters .popover ul li ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+/* Show the sub-list on hover */
+.filters .popover ul li:hover ul {
+    display: block;
+}
+
