@@ -182,7 +182,7 @@ article h2{
 }
 .places .amenities ul li {
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   align-items: end;
   display: flex;
   align-items: center;
