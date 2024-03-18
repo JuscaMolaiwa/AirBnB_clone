@@ -58,12 +58,15 @@ article h2{
     margin-top: -5px;
 }
 .price{
-    margin-top: -1px;
+    margin-top: 0;
 }
 .price_title{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.article_title h2 {
+    margin-top: 0;
 }
 .information{
     height:80px;
