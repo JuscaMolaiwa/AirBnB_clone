@@ -12,7 +12,7 @@
 }
 
 .places article {
-  flex-basis: calc(33.33% - 20px); /* Set the width for each article */
+  width: 390px;
   padding: 20px;
   margin: 20px;
   border-radius: 4px;
@@ -28,16 +28,9 @@
   flex-grow: 1;
 }
 
-.information {
+.article_places_header {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.information > div {
-  flex-basis: calc(33.33% - 10px);
-  display: flex;
-  align-items: center;
 }
 
 .price_by_night {
@@ -54,14 +47,53 @@
   margin-bottom: 5px;
 }
 
+.information {
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .user {
   padding: 20px 0 5px;
 }
 
-.user b,
-.user p {
+.user b, p {
   margin: 0;
   padding: 0;
+}
+
+.max_guest {
+  background-image: url(../images/icon_group.png);
+}
+
+.number_rooms {
+  background-image: url(../images/icon_bed.png);
+}
+
+.number_bathrooms {
+  background-image: url(../images/icon_bath.png)
+}
+
+.max_guest,
+.number_rooms,
+.number_bathrooms {
+  width: 100px;
+  background-repeat: no-repeat;
+  display:flex;
+  flex-direction: column-reverse;
+  background-position-x: center;
+  text-align:center;
+}
+
+.places .amenities,
+.places .reviews {
+  margin-top: 40px;
+  width: 100%;
+  height: inherit;
 }
 
 .places .amenities ul,
@@ -84,25 +116,14 @@
 .places .reviews p {
   font-size: 12px;
 }
-.filters {
-  display: none;
-}
 
-.places .amenities ul li,
-.places .reviews ul li {
+.places .amenities ul li {
   display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-.places_amenities_pet_friendly,
-.places_amenities_tv,
-.places_amenities_wifi {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  margin-bottom: 10px;
+  align-items: end;
 }
 
 .places_amenities_pet_friendly {
@@ -115,5 +136,15 @@
 
 .places_amenities_wifi {
   background-image: url(../images/icon_wifi.png);
+}
+
+.places_amenities_pet_friendly,
+.places_amenities_tv,
+.places_amenities_wifi {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }
 
