@@ -185,31 +185,32 @@ article h2{
 /*******************************************/
 /* amenities icons */
 /*******************************************/
-.places .amenities ul li{
+.places .amenities ul li {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-content: center;
+  align-items: center; /* Changed to center */
   margin-bottom: 10px;
-  align-items: end;
-  }
-
-.places_amenities_pet_friendly {
-  background-image: url(../images/icon_pets.png);
-}
-.places_amenities_tv {
-  background-image: url(../images/icon_tv.png);
-}
-.places_amenities_wifi {
-  background-image: url(../images/icon_wifi.png);
 }
 
-.places_amenities_pet_friendly,
-.places_amenities_tv,
-.places_amenities_wifi {
+.places .amenities .amenity-icon {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center; /* Added */
   width: 20px;
   height: 20px;
   display: inline-block;
 }
+
+.places .amenities .pet-friendly {
+  background-image: url(../images/icon_pets.png);
+}
+
+.places .amenities .tv {
+  background-image: url(../images/icon_tv.png);
+}
+
+.places .amenities .wifi {
+  background-image: url(../images/icon_wifi.png);
+}
+
