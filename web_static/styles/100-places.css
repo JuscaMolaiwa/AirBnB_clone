@@ -179,6 +179,34 @@ article h2{
   display: none;
 }
 
+.places .amenities,
+.places .reviews {
+  margin-top: 40px;
+  width: 100%;
+  height: inherit;
+}
+
+.places .amenities ul,
+.places .reviews ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.places .amenities h2,
+.places .reviews h2 {
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.places .reviews h3 {
+  font-size: 14px;
+}
+
+.places .reviews p {
+  font-size: 12px;
+}
+
 /*******************************************/
 /* amenities icons */
 /*******************************************/
@@ -210,5 +238,3 @@ article h2{
   height: 20px;
   display: inline-block;
 }
-
-
